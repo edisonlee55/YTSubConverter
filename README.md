@@ -34,6 +34,9 @@ Below is the screenshot of YTSubConverterMac running on macOS.
 **Unimplemented function:**
 - Text Preview Box (which uses `Mono.WebBrowser`)
 
+### macOS manual build notice
+**If you want to build it manually, remember to first clean the project `YTSubConverterMac.app` every time before you build the project or whole solution. Otherwise, it may not rebuild the app with the newest code.**
+
 ## Usage
 YTSubConverter is an .ass → .ytt converter. You can create .ass subtitles using [Aegisub](http://www.aegisub.org/).
 
