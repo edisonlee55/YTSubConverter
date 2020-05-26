@@ -81,7 +81,8 @@ namespace Arc.YTSubConverter
 
         private void ExpandCollapseStyleOptions()
         {
-            Height = (int)((_chkStyleOptions.Checked ? 488 : 142) * _windowsScaleFactor);
+            // Height = (int)((_chkStyleOptions.Checked ? 488 : 142) * _windowsScaleFactor);
+            Height = (int)(488 * _windowsScaleFactor);
         }
 
         private void _btnBrowse_Click(object sender, EventArgs e)
