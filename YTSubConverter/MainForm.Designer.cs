@@ -32,7 +32,7 @@
             this._spltStyleOptions = new System.Windows.Forms.SplitContainer();
             this._lstStyles = new System.Windows.Forms.ListBox();
             this._btnBackgroundImage = new System.Windows.Forms.Button();
-            this._brwPreview = new System.Windows.Forms.WebBrowser();
+            //this._brwPreview = new System.Windows.Forms.WebBrowser();
             this._pnlOptions = new System.Windows.Forms.Panel();
             this._pnlKaraokeType = new System.Windows.Forms.Panel();
             this._btnPickShadowColor = new System.Windows.Forms.Button();
@@ -90,7 +90,7 @@
             // _spltStyleOptions.Panel2
             // 
             this._spltStyleOptions.Panel2.Controls.Add(this._btnBackgroundImage);
-            this._spltStyleOptions.Panel2.Controls.Add(this._brwPreview);
+            //this._spltStyleOptions.Panel2.Controls.Add(this._brwPreview);
             this._spltStyleOptions.Panel2.Controls.Add(this._pnlOptions);
             this._spltStyleOptions.Size = new System.Drawing.Size(763, 328);
             this._spltStyleOptions.SplitterDistance = 257;
@@ -120,15 +120,15 @@
             // 
             // _brwPreview
             // 
-            this._brwPreview.AllowWebBrowserDrop = false;
-            this._brwPreview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._brwPreview.IsWebBrowserContextMenuEnabled = false;
-            this._brwPreview.Location = new System.Drawing.Point(0, 126);
-            this._brwPreview.MinimumSize = new System.Drawing.Size(20, 18);
-            this._brwPreview.Name = "_brwPreview";
-            this._brwPreview.Size = new System.Drawing.Size(502, 202);
-            this._brwPreview.TabIndex = 0;
-            this._brwPreview.WebBrowserShortcutsEnabled = false;
+            // this._brwPreview.AllowWebBrowserDrop = false;
+            // this._brwPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            // this._brwPreview.IsWebBrowserContextMenuEnabled = false;
+            // this._brwPreview.Location = new System.Drawing.Point(0, 126);
+            // this._brwPreview.MinimumSize = new System.Drawing.Size(20, 18);
+            // this._brwPreview.Name = "_brwPreview";
+            // this._brwPreview.Size = new System.Drawing.Size(502, 202);
+            // this._brwPreview.TabIndex = 0;
+            // this._brwPreview.WebBrowserShortcutsEnabled = false;
             // 
             // _pnlOptions
             // 
@@ -471,7 +471,7 @@
 
         #endregion
 
-        private System.Windows.Forms.WebBrowser _brwPreview;
+        //private System.Windows.Forms.WebBrowser _brwPreview;
         private System.Windows.Forms.TextBox _txtInputFile;
         private System.Windows.Forms.GroupBox _grpStyleOptions;
         private System.Windows.Forms.ListBox _lstStyles;

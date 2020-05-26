@@ -37,6 +37,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Xamarin - Debug|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Xamarin - Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG; NET_4_5; NET_4_0; MAC;XAMARINMAC;__UNIFIED__</DefineConstants>
+    <PlatformTarget>anycpu</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
@@ -47,8 +56,6 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -186,4 +193,30 @@
     <RemoveDir Directories="$(TargetDir)ja;$(TargetDir)ko;$(TargetDir)ru;$(TargetDir)zh-Hans;$(TargetDir)zh-Hant" />
     <Move SourceFiles="$(TargetDir)YTSubConverter-merged.exe" DestinationFiles="$(TargetDir)YTSubConverter.exe" />
   </Target>
+  <ItemGroup>
+<!--    <ProjectReference Include="..\mono\mcs\class\Mono.WebBrowser\Mono.WebBrowser-net_4_5.csproj" Condition=" '$(Configuration)' == 'Mono - Debug' or '$(Configuration)' == 'Xamarin - Debug' or '$(Configuration)' == 'Xamarin-Release' ">-->
+<!--      <Project>{1D660912-8164-4499-A2D7-A3B2FE742E17}</Project>-->
+<!--      <Name>Mono.WebBrowser-net_4_5</Name>-->
+<!--    </ProjectReference>-->
+    <ProjectReference Include="..\mono\mcs\class\System.Windows.Forms\System.Windows.Forms-net_4_5.csproj" Condition=" '$(Configuration)' == 'Mono - Debug' or '$(Configuration)' == 'Xamarin - Debug' or '$(Configuration)' == 'Xamarin-Release' ">
+      <Project>{B102F27C-1A07-487F-BA5B-D5155D201112}</Project>
+      <Name>System.Windows.Forms-net_4_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sysdrawing-coregraphics\System.Drawing (CoreGraphics).csproj" Condition="'$(Configuration)' == 'Mono - Debug' or '$(Configuration)' == 'Xamarin - Debug' or '$(Configuration)' == 'Xamarin-Release'">
+      <Project>{C675FE3F-497D-4CE7-B441-3C0299B30C10}</Project>
+      <Name>System.Drawing (CoreGraphics)</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MacApi\MacApi.csproj" Condition="'$(Configuration)' == 'Mono - Debug' or '$(Configuration)' == 'Xamarin - Debug' or '$(Configuration)' == 'Xamarin-Release'">
+      <Project>{981DC886-42D2-496B-B6E1-1EF6FE3EE78A}</Project>
+      <Name>MacApi</Name>
+    </ProjectReference>
+    <!-- Include Mac API libraries -->
+    <Reference Include="MonoMac" Condition=" '$(Configuration)' == 'Mono - Debug' ">
+      <HintPath>$(SolutionDir)\Dependencies\Mac\MonoMac.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Mac" Condition=" '$(Configuration)' == 'Xamarin - Debug' or '$(Configuration)' == 'Xamarin-Release' " />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" Condition=" '$(Configuration)' != 'Xamarin - Debug' and '$(Configuration)' != 'Xamarin-Release'" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" Condition=" '$(Configuration)' == 'Xamarin - Debug' or '$(Configuration)' == 'Xamarin-Release'" />
 </Project>

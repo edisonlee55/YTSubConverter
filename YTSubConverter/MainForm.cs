@@ -172,7 +172,7 @@ namespace Arc.YTSubConverter
             if (options == null)
             {
                 _spltStyleOptions.Panel2.Enabled = false;
-                _brwPreview.DocumentText = string.Empty;
+                //_brwPreview.DocumentText = string.Empty;
                 return;
             }
 
@@ -355,7 +355,7 @@ namespace Arc.YTSubConverter
                 return;
 
             AssStyle style = _styles?[SelectedStyleOptions.Name];
-            _brwPreview.DocumentText = StylePreviewGenerator.GenerateHtml(style, SelectedStyleOptions, _defaultFontSize, _windowsScaleFactor);
+            //_brwPreview.DocumentText = StylePreviewGenerator.GenerateHtml(style, SelectedStyleOptions, _defaultFontSize, _windowsScaleFactor);
         }
 
         private void _chkAutoConvert_CheckedChanged(object sender, EventArgs e)

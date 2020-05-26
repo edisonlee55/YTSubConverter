@@ -10,22 +10,23 @@ using Arc.YTSubConverter.Formats.Ass;
 
 namespace Arc.YTSubConverter
 {
-    internal static class Program
+    public static class Program
     {
         [STAThread]
-        internal static void Main(string[] args)
+        public static int Main(string[] args)
         {
             PreloadResources();
 
             if (args.Length > 0)
             {
                 RunCommandLine(args);
-                return;
+                return 0;
             }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            return 0;
         }
 
         private static void RunCommandLine(string[] args)

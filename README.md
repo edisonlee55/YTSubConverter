@@ -1,5 +1,7 @@
-# YTSubConverter
-A tool for creating styled YouTube subtitles.
+# YTSubConverterMac
+A tool for creating styled YouTube subtitles. Ported to macOS.
+
+Fork from [arcusmaximus/YTSubConverter](https://github.com/arcusmaximus/YTSubConverter) under the MIT License.
  
 ![Sample image](images/sample.png)
 
@@ -17,9 +19,9 @@ YouTube's built-in subtitle editor doesn't support styling of any kind. If you w
 
 YTSubConverter can produce this file format for you.
 
-The current version is **1.4.3**. You can find the change history on the [Releases](https://github.com/arcusmaximus/YTSubConverter/releases) tab.
+The current version is **1.4.3**. You can find the change history on the [Releases](https://github.com/edisonlee55/YTSubConverterMac/releases) tab.
 
-[![Download](images/download.png)](https://github.com/arcusmaximus/YTSubConverter/releases/latest/download/YTSubConverter.exe)
+[![Download](images/download.png)](https://github.com/edisonlee55/YTSubConverterMac/releases/latest/download/YTSubConverterMac.app.zip)
 
 ## Usage
 YTSubConverter is an .ass → .ytt converter. You can create .ass subtitles using [Aegisub](http://www.aegisub.org/).
