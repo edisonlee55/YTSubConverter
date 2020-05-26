@@ -80,9 +80,13 @@ Global
 		{FE339CAD-14BD-43DB-A700-5DDC8B75F43B}.Xamarin - Debug|Any CPU.Build.0 = Xamarin - Debug|Any CPU
 		{FE339CAD-14BD-43DB-A700-5DDC8B75F43B}.Debug|Any CPU.ActiveCfg = Xamarin - Debug|Any CPU
 		{FE339CAD-14BD-43DB-A700-5DDC8B75F43B}.Debug|Any CPU.Build.0 = Xamarin - Debug|Any CPU
+		{FE339CAD-14BD-43DB-A700-5DDC8B75F43B}.Xamarin-Release|Any CPU.ActiveCfg = Xamarin-Release|Any CPU
+		{FE339CAD-14BD-43DB-A700-5DDC8B75F43B}.Xamarin-Release|Any CPU.Build.0 = Xamarin-Release|Any CPU
 		{A98B30C0-5E96-44CD-B744-8EA7FFC12AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A98B30C0-5E96-44CD-B744-8EA7FFC12AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A98B30C0-5E96-44CD-B744-8EA7FFC12AC0}.Xamarin - Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A98B30C0-5E96-44CD-B744-8EA7FFC12AC0}.Xamarin - Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98B30C0-5E96-44CD-B744-8EA7FFC12AC0}.Xamarin-Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98B30C0-5E96-44CD-B744-8EA7FFC12AC0}.Xamarin-Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
