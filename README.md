@@ -23,6 +23,17 @@ The current version is **1.4.3**. You can find the change history on the [Releas
 
 [![Download](images/download.png)](https://github.com/edisonlee55/YTSubConverterMac/releases/latest/download/YTSubConverterMac.app.zip)
 
+## macOS Support
+Below is the screenshot of YTSubConverterMac running on macOS.
+
+![YTSubConverterMac Screenshot](images/YTSubConverterMac-Screenshot.png)
+
+**To be improved:**
+- Some button does not have a border
+
+**Unimplemented function:**
+- Text Preview Box (which uses `Mono.WebBrowser`)
+
 ## Usage
 YTSubConverter is an .ass → .ytt converter. You can create .ass subtitles using [Aegisub](http://www.aegisub.org/).
 
