@@ -30,6 +30,7 @@ Below is the screenshot of YTSubConverterMac running on macOS.
 
 **To be improved:**
 - Some button does not have a border
+- Need to reopen the app after initial gatekeeper dialog
 
 **Unimplemented function:**
 - Text Preview Box (which uses `Mono.WebBrowser`)
