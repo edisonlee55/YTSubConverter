@@ -1,6 +1,6 @@
 ﻿using AppKit;
 
-namespace MailClientApp
+namespace YTSubConverterMac
 {
 	static class MainClass
 	{

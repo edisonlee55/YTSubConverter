@@ -3,7 +3,7 @@
 using AppKit;
 using Foundation;
 
-namespace MailClientApp
+namespace YTSubConverterMac
 {
 	public partial class ViewController : NSViewController
 	{

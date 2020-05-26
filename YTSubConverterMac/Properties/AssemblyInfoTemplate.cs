@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: InternalsVisibleTo("MailClient.UITest")]
+[assembly: InternalsVisibleTo("YTSubConverterMac.UITest")]
 
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -23,7 +23,7 @@ using System.Runtime.InteropServices;
 [assembly: Guid("93f6b425-2131-4be7-9efe-6bd0161c9c71")]
 
 // NGEN optimization
-[assembly: Dependency("MailClient", LoadHint.Always)]
+[assembly: Dependency("YTSubConverterMac", LoadHint.Always)]
 
 // Version information for an assembly consists of the following four values:
 //

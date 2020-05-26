@@ -6,7 +6,7 @@
 //
 using Foundation;
 
-namespace MailClientApp
+namespace YTSubConverterMac
 {
 	[Register("ViewController")]
 	partial class ViewController
