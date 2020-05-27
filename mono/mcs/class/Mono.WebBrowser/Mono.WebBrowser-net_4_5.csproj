@@ -60,6 +60,10 @@
   <ItemGroup>
     <Compile Include="..\..\build\common\Consts.cs" />
     <Compile Include="Assembly\AssemblyInfo.cs" />
+    <!--<Compile Include="Mono.Mozilla\DOM\*.cs" />-->
+    <!--<Compile Include="Mono.Mozilla\interfaces\*.cs" />-->
+    <!--<Compile Include="Mono.Mozilla\interfaces\extras\*.cs" />-->
+    <!--<Compile Include="Mono.Mozilla\*.cs" />-->
     <Compile Include="Mono.WebBrowser\DOM\EventArgs.cs" />
     <Compile Include="Mono.WebBrowser\DOM\EventHandlers.cs" />
     <Compile Include="Mono.WebBrowser\DOM\IAttribute.cs" />
@@ -91,10 +95,10 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' "></PreBuildEvent>
-    <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' "></PreBuildEvent>
-    <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' "></PostBuildEvent>
-    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' "></PostBuildEvent>
+    <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' " />
+    <PreBuildEvent Condition=" '$(OS)' == 'Windows_NT' " />
+    <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' " />
+    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' " />
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
