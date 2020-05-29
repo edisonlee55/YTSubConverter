@@ -81,6 +81,7 @@ namespace Arc.YTSubConverter
 
         private void ExpandCollapseStyleOptions()
         {
+            // Workaround for index out of range exception on macOS
             // Height = (int)((_chkStyleOptions.Checked ? 488 : 142) * _windowsScaleFactor);
             Height = (int)(488 * _windowsScaleFactor);
         }
